@@ -16,6 +16,12 @@ int main()
 
     int l=strlen(s1);
     printf("\n\nThe length of the string is:\t%d",l);
+
+    int i=strcmp(s1,s2);
+    if(i==0)
+        printf("\n\nStrings are the same.\n\n");
+    else
+        printf("\n\nStrings are different.\n\n");
     return 0;
 
 }
