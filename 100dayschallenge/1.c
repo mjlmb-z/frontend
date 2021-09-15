@@ -22,5 +22,11 @@ int main()
             }
         }
     }
+    
+    printf("\n\nThe entered elements in the ascending order is:\n");
+    for(i=0;i<s;i++)
+    {
+        printf("\t%d",x[i]);
+    }
     return 0;
 }
