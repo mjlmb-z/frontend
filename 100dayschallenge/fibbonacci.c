@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,c,a=0,b=1,t;
+    int n,c,a=0,b=1;
     printf("Enter the place until wehre you'd like the series:\t");
     scanf("%d",&n);
     printf("\n\n%d\t%d",a,b);
