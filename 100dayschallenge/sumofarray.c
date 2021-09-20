@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int x[100], i, sum=0,s;
+    int i, sum=0,s;
     printf("\nEnter the size of the array:\t");
     scanf("%d",&s);
+    int x[s];
     printf("\nEnter %d elements:\n",s);
     for(i=0;i<s;++i)
     {
