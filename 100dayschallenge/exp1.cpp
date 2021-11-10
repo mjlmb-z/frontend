@@ -43,7 +43,7 @@ int main()
     
         do
         {
-            cout<<"\nEnter type of car (0 for paying and 1 for non-paying):\t";
+            cout<<"Enter type of car (0 for paying and 1 for non-paying):\t";
             cin>>type;
         }
         while(type<0 || type>1);
@@ -55,16 +55,12 @@ int main()
         {
             case 1:lane[0]++;
             break;
-    
             case 2:lane[1]++;
             break;
-    
             case 3:lane[2]++;
             break;
-    
             case 4:lane[3]++;
             break;
-    
             case 5:lane[4]++;
             break;
         }
@@ -73,8 +69,6 @@ int main()
     }
     while(ch=='y' || ch=='Y');
     for(int k=1;k<6;k++)
-    {
-        cout<<"\n\nTotal cars passed through lane "<<k<<":\t"<<lane[k-1];
-    }
+        cout<<"\nTotal cars passed through lane "<<k<<":\t"<<lane[k-1];
     return 0;
 }
