@@ -16,10 +16,33 @@ class person{
     }
 };    
 
+class employee: public person{
+    protected: char d[25]; //designation
+    public: float hra, da,cca, basic;
+    void getdata2(){
+        cout<<"Enter your designation:\t";
+        cin>>d;
+        
+    }
+    void putdata2(){
+        cout<<
+    }
+};
+
+class salary: public person{ 
+    public:
+    float total_salary;
+    void display(){
+        cout<<"Your total salary is:\t"<<total_salary;
+    }
+};
+
     int main(){
         person o;
         o.getdata1();
         o.putdata1();
+        o.getdata2();
+        o.display();
 
         return 0;
     }
