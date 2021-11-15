@@ -19,5 +19,7 @@ class results: public test,public sports{
 };
 
 int main(){
-    
+    results o;
+    o.
+
 }
