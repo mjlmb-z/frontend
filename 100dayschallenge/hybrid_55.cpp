@@ -9,8 +9,8 @@ class student{
         cin>>r;
     }
     void pdata(){
-        cout<<"\n-------"<<endl;
-        cout<<"Roll no:\t"<<r<<"\n";
+        cout<<"\n\n-------"<<endl;
+        cout<<"Roll no:\t"<<r;
     }
 
 };
