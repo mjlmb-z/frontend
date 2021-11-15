@@ -18,30 +18,41 @@ class person{
 
 class employee: public person{
     protected: char d[25]; //designation
-    public: float hra, da,cca, basic;
+    public: float hra, da,cca, basic, z=basic+cca+da+hra;
     void getdata2(){
-        cout<<"Enter your designation:\t";
+        cout<<"\nEnter your designation:\t";
         cin>>d;
+        cout<<"\nEnter your basic:\t";
+        cin>>basic;
+        cout<<"\nEnter you HRA:\t";
+        cin>>hra;
+        cout<<"\nEnter your CCA:\t";
+        cin>>cca;
+        cout<<"\nEnter your DA:\t";
+        cin>>da;
+        
         
     }
     void putdata2(){
-        cout<<
+        cout<<"\n\nBasic:\t"<<basic<<"\tDA:\t"<<da;
+        cout<<"\nHRA:\t"<<hra<<"\tCCA:\t"<<cca;
     }
 };
 
-class salary: public person{ 
+class salary: public employee{ 
     public:
     float total_salary;
     void display(){
-        cout<<"Your total salary is:\t"<<total_salary;
+        cout<<"\n\n\nYour total salary is:\t"<<basic+cca+hra+da;
     }
 };
 
     int main(){
-        person o;
+        salary o;
         o.getdata1();
-        o.putdata1();
         o.getdata2();
+        o.putdata1();
+        o.putdata2();
         o.display();
 
         return 0;
