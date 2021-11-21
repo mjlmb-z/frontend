@@ -2,9 +2,9 @@
 using namespace std;
 
 class Train{
-    protected:
+    public:
     static int fc,sc,tc,fc1,sc1,tc1;
-    int train_no=19467;
+        int train_no=19467;
 };
 
 class reservation: public Train{
