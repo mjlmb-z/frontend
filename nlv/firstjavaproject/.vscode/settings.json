@@ -1,0 +1,20 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\Lily\\Downloads\\microsoft-jdk-17.0.1.12.1-windows-x64\\jdk-17.0.1+12\\lib\\jrt-fs.jar",
+        "c:\\Users\\Lily\\Downloads\\java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64\\java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64\\lib\\dt.jar",
+        "c:\\Users\\Lily\\Downloads\\java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64\\java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64\\lib\\jconsole.jar",
+        "c:\\Users\\Lily\\Downloads\\java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64\\java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64\\lib\\sa-jdi.jar",
+        "c:\\Users\\Lily\\Downloads\\java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64\\java-1.8.0-openjdk-1.8.0.312-2.b07.dev.redhat.windows.x86_64\\lib\\tools.jar",
+        "c:\\Users\\Lily\\OneDrive\\Documents\\java\\javafx-sdk-17.0.1\\lib\\javafx.base.jar",
+        "c:\\Users\\Lily\\OneDrive\\Documents\\java\\javafx-sdk-17.0.1\\lib\\javafx.controls.jar",
+        "c:\\Users\\Lily\\OneDrive\\Documents\\java\\javafx-sdk-17.0.1\\lib\\javafx.fxml.jar",
+        "c:\\Users\\Lily\\OneDrive\\Documents\\java\\javafx-sdk-17.0.1\\lib\\javafx.graphics.jar",
+        "c:\\Users\\Lily\\OneDrive\\Documents\\java\\javafx-sdk-17.0.1\\lib\\javafx.media.jar",
+        "c:\\Users\\Lily\\OneDrive\\Documents\\java\\javafx-sdk-17.0.1\\lib\\javafx.swing.jar",
+        "c:\\Users\\Lily\\OneDrive\\Documents\\java\\javafx-sdk-17.0.1\\lib\\javafx.web.jar",
+        "c:\\Users\\Lily\\OneDrive\\Documents\\java\\javafx-sdk-17.0.1\\lib\\javafx-swt.jar"
+    ]
+}
