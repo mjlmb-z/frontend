@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch nlvloginpage/App",
+            "request": "launch",
+            "mainClass": "com.example.nlvloginpage/App",
+            "projectName": "new_c1ffba96"
+        },
+        {
+            "type": "java",
             "name": "Launch HelloApplication",
             "request": "launch",
             "mainClass": "HelloApplication",
