@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
+   <children>
+      <Avatar layoutX="550.0" layoutY="14.0" radius="15.0">
+         <image>
+            <Image url="@../../../../../../../Downloads/unicorn.png" />
+         </image>
+      </Avatar>
+   </children>
+</fx:root>
