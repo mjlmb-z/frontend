@@ -73,7 +73,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="3.0" layoutX="355.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: #1c1c1c;" text="Library" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="9.0">
+      <Button alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="3.0" layoutX="355.0" layoutY="9.0" mnemonicParsing="false" onAction="#libraryButtonClicked" style="-fx-background-color: #1c1c1c;" text="Library" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="9.0">
          <font>
             <Font name="Bodoni MT Bold" size="12.0" />
          </font>
