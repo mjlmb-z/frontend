@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 public class AppController {
     @Override
 
-    public void librarybuttonOnAction(ActionEvent e){
+    public void librarybuttonOnAction(){
         Stage stage =(Stage) librarybutton.getScene().getWindow();
         stage.close();
         }
