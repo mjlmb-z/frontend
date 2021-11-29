@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
    <children>
@@ -58,21 +59,46 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="404.0">
                <children>
-                  <Label layoutY="7.0" text="Recently Played" textFill="WHITE">
+                  <Label layoutY="8.0" text="Recently Played" textFill="WHITE">
                      <font>
-                        <Font name="Perpetua Bold" size="13.0" />
+                        <Font name="Perpetua Titling MT Bold" size="10.0" />
                      </font>
                   </Label>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="-5.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../nlv%20pic/3x/Artboard%2010230.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Favourites">
+                     <font>
+                        <Font name="Perpetua Bold" size="10.0" />
+                     </font>
+                  </Text>
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="161.0">
                <children>
                   <Pane layoutX="-15.0" layoutY="14.0" prefHeight="338.6666666666667" prefWidth="118.66666666666667" style="-fx-background-color: #1c1c1c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <Pane layoutX="29.0" layoutY="21.0" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: #c6c6c6;">
+                        <Text fill="WHITE" layoutX="45.0" layoutY="19.0" opacity="0.63" strokeType="OUTSIDE" strokeWidth="0.0" text="now playing" textAlignment="CENTER">
+                           <font>
+                              <Font name="Perpetua Bold" size="11.0" />
+                           </font>
+                        </Text>
+                        <Pane layoutX="29.0" layoutY="30.0" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: #c6c6c6;">
                            <cursor>
                               <Cursor fx:constant="DEFAULT" />
                            </cursor>
                         </Pane>
+                        <Label layoutX="33.0" layoutY="128.0" text="song's name" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Perpetua Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text fill="WHITE" layoutX="42.0" layoutY="159.0" opacity="0.63" strokeType="OUTSIDE" strokeWidth="0.0" text="-artist's name" textAlignment="CENTER">
+                           <font>
+                              <Font name="Perpetua Bold" size="11.0" />
+                           </font>
+                        </Text>
                         <ScrollBar layoutX="24.0" layoutY="237.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.45" style="-fx-background-color: #F2F2F2;">
                            <cursor>
                               <Cursor fx:constant="HAND" />
