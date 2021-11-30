@@ -4,6 +4,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import javax.swing.event.ChangeListener;
 
 //import java.util.Timer;
 //import java.util.TimerTask;
@@ -104,13 +105,13 @@ public class AppController implements Initializable{
             mediaPlayer= new MediaPlayer(media);
 
             songLabel.setText(songs.get(songNumber).getName());
-            /*volumeSlider.valueProperty().addListner(new ChangeListener<Number>(){
+            volumeSlider.valueProperty().addListner(new ChangeListener<Number>(){
                 @Override
                 public void changed(ObservableValue<? extends Number> arg0, Number arg1, Number arg2){
                     mediaPlayer.setVolume(volumeSlider.getValue() * 0.01);
                 }
-                
-            });*/
+
+            });
         }
     }
 
