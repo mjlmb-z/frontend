@@ -19,6 +19,7 @@ import javafx.scene.layout.Pane;
 //import javafx.scene.layout.StackPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.util.Duration;
 public class AppController implements Initializable{
 
     public static void main(String[] args){
@@ -66,12 +67,42 @@ public class AppController implements Initializable{
         songLabel.setText(songs.get(songNumber).getName());
         
     }
-    public void playmedia(){
+    public void playButton(){
+        
         mediaPlayer.play();
 
     }
 
     public void pausemedia(){
+        mediaPlayer.pause();
 
+    }
+
+    public void resetmedia(){
+        mediaPlayer.seek(Duration.seconds(0));
+
+    }
+
+    public void nextmedia(){
+        if(songNumber < songs.size() - 1){
+            songNumber++;
+            mediaPlayer.stop();
+
+            media = new Media(songs.get(songNumber).toURI().toString());
+            mediaPlayer= new MediaPlayer(media);
+
+            songLabel.setText(songs.get(songNumber).getName());
+            playButton();
+        }
+        else{
+            songNumber=0;
+            mediaPlayer.stop();
+
+            media = new Media(songs.get(songNumber).toURI().toString());
+            mediaPlayer= new MediaPlayer(media);
+
+            songLabel.setText(songs.get(songNumber).getName());
+
+        }
     }
 }

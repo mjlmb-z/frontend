@@ -1,3 +1,12 @@
-#grad {
-    background-image: linear-gradient(90deg,#020024 0%, #090979 35%, #00d4ff 100%);
-  }
+.pane_color{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #D1397B, #F3EDDB);
+}
+
+.scrollbar_color{
+  -fx-background-color:linear-gradient(from 9% 9% to 81% 81%, #f9f2e7,#000000)
+}
+
+.preppy {
+  color: #f9f2e7;
+  font-weight: 1080;
+}
