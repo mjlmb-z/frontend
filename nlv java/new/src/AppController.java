@@ -1,4 +1,4 @@
-package controller;
+
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -10,9 +10,8 @@ import javafx.stage.Stage;
 public class AppController {
     @Override
 
-    public void librarybuttonOnAction(){
+    public void librarybuttonOnClick(){
         Stage stage =(Stage) librarybutton.getScene().getWindow();
         stage.close();
         }
-    
 }

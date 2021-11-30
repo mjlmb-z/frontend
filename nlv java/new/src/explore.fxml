@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -9,22 +42,28 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1c1c1c;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
    <children>
-      <Circle fill="#d1397b" layoutX="575.0" layoutY="23.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="9.0" />
       <ImageView accessibleRole="BUTTON" blendMode="LIGHTEN" cache="true" fitHeight="47.0" fitWidth="47.0" layoutX="4.0" layoutY="-7.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@nlv%20pic/3_prev_ui.png" />
+            <Image url="@3_prev_ui.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Button alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="3.0" layoutX="226.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: #1c1c1c;" text="Home" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="324.0" AnchorPane.topAnchor="9.0">
+      <Avatar layoutX="550.0" layoutY="14.0" radius="15.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="9.0">
+         <image>
+            <Image url="@unicorn.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Avatar>
+      <Button alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="3.0" layoutX="226.0" layoutY="9.0" mnemonicParsing="false" opacity="0.27" style="-fx-background-color: #1c1c1c;" text="Home" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="324.0" AnchorPane.topAnchor="9.0">
          <font>
             <Font name="Bodoni MT Bold" size="12.0" />
          </font>
@@ -32,7 +71,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="3.0" layoutX="456.0" layoutY="9.0" mnemonicParsing="false" opacity="0.27" style="-fx-background-color: #1c1c1c;" text="Explore" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="9.0">
+      <Button alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="3.0" layoutX="456.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: #1c1c1c;" text="Explore" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="216.0" AnchorPane.topAnchor="9.0">
          <font>
             <Font name="Bodoni MT" size="12.0" />
          </font>
@@ -40,7 +79,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="3.0" layoutX="355.0" layoutY="9.0" mnemonicParsing="false" onAction="#onHelloButtonClick" opacity="0.27" style="-fx-background-color: #1c1c1c;" text="Library" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="9.0">
+      <Button alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="3.0" layoutX="355.0" layoutY="9.0" mnemonicParsing="false" onAction="#librarybuttonOnAction" opacity="0.27" style="-fx-background-color: #1c1c1c;" text="Library" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="9.0">
          <font>
             <Font name="Bodoni MT Bold" size="12.0" />
          </font>
@@ -49,48 +88,42 @@
          </cursor>
       </Button>
       <SplitPane dividerPositions="0.75" layoutX="386.0" layoutY="47.0" prefHeight="341.0" prefWidth="582.0" style="-fx-background-color: #1c1c1c;" AnchorPane.rightAnchor="9.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="404.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="404.0">
                <children>
-                  <Label layoutY="1.0" opacity="0.63" prefHeight="18.0" prefWidth="58.0" style="-fx-background-color: #1c1c1c;" text="HOME" textFill="WHITE">
+                  <Label layoutY="1.0" opacity="0.63" prefHeight="18.0" prefWidth="58.0" style="-fx-background-color: #1c1c1c;" text="Explore" textFill="WHITE">
                      <font>
                         <Font name="Perpetua Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutY="38.0" text="Recently Played" textFill="WHITE">
+                  <Label accessibleRole="BUTTON" layoutX="107.0" layoutY="3.0" opacity="0.63" prefHeight="18.0" prefWidth="58.0" style="-fx-background-color: #1c1c1c;" text="Songs" textFill="WHITE">
                      <font>
-                        <Font name="Perpetua Titling MT Bold" size="9.0" />
+                        <Font name="Perpetua Bold" size="14.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Label>
-                  <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="-5.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@nlv%20pic/3x/Artboard%2010230.jpg" />
-                     </image>
-                  </ImageView>
-                  <Text fill="WHITE" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Favourites">
+                  <Label accessibleRole="BUTTON" layoutX="194.0" layoutY="4.0" opacity="0.63" prefHeight="18.0" prefWidth="58.0" style="-fx-background-color: #1c1c1c;" text="Album" textFill="WHITE">
                      <font>
-                        <Font name="Perpetua Bold" size="10.0" />
+                        <Font name="Perpetua Bold" size="14.0" />
                      </font>
-                  </Text>
-               </children></AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="272.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="339.0" prefWidth="272.0">
                <children>
                   <Pane layoutX="-15.0" layoutY="14.0" prefHeight="338.6666666666667" prefWidth="118.66666666666667" style="-fx-background-color: #1c1c1c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <ImageView accessibleRole="BUTTON" fitHeight="24.0" fitWidth="27.0" layoutX="107.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@nlv%20pic/next.png" />
-                           </image>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </ImageView>
                         <Text fill="WHITE" layoutX="42.0" layoutY="22.0" opacity="0.63" strokeType="OUTSIDE" strokeWidth="0.0" text="now playing" textAlignment="CENTER">
                            <font>
                               <Font name="Perpetua Bold" size="11.0" />
                            </font>
                         </Text>
-                        <Pane layoutX="26.0" layoutY="33.0" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: #c6c6c6;">
+                        <Pane layoutX="26.0" layoutY="33.0" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: #c6c6c6;" stylesheets="@../vscode%20prg/.vscode/nlv%20java/new/src/bg.css">
                            <cursor>
                               <Cursor fx:constant="DEFAULT" />
                            </cursor>
@@ -227,19 +260,11 @@
                               <Font name="Perpetua" size="14.0" />
                            </font>
                         </Text>
-                        <ImageView accessibleRole="BUTTON" fitHeight="31.0" fitWidth="30.0" layoutX="15.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@nlv%20pic/prev.png" />
-                           </image>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
-                        </ImageView>
                      </children>
                   </Pane>
                </children>
             </AnchorPane>
-        </items>
+         </items>
       </SplitPane>
    </children>
 </AnchorPane>
