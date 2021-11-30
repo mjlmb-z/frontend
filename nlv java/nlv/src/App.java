@@ -37,12 +37,12 @@ import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-import java.util.Timer;
-import java.util.TimerTask;
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+//import java.util.Timer;
+//import java.util.TimerTask;
+//import javafx.application.Application;
+//import javafx.fxml.FXMLLoader;
+//import javafx.event.ActionEvent;
+//import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -50,10 +50,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.Slider;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
+//import javafx.scene.layout.StackPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-public class AppController implements Initializable{
+public class App implements Initializable{
 
     @FXML
     private Pane pane;
@@ -97,6 +97,7 @@ public class AppController implements Initializable{
         
     }
     public void playmedia(){
+        mediaPlayer.play();
 
     }
 
