@@ -259,7 +259,7 @@
                            </font>
                         </Text>
                         <ProgressBar layoutX="6.0" layoutY="224.0" prefHeight="3.0" prefWidth="131.0" progress="0.0" />
-                        <Slider layoutX="26.0" layoutY="258.0" prefHeight="24.0" prefWidth="100.0" stylesheets="@bg.css" value="36.0" />
+                        <Slider fx:id="volumeSlider" layoutX="26.0" layoutY="258.0" prefHeight="24.0" prefWidth="100.0" stylesheets="@bg.css" value="36.0" />
                         <Button graphicTextGap="1.0" layoutX="85.0" layoutY="189.0" minHeight="17.0" minWidth="45.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="45.0" style="-fx-background-color: #1c1c1c;" text="next" textFill="#1c1c1c">
                            <graphic>
                               <ImageView fitHeight="24.0" fitWidth="44.0" onTouchPressed="#nextmedia" pickOnBounds="true" preserveRatio="true">
@@ -271,6 +271,9 @@
                                  </cursor>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button graphicTextGap="1.0" layoutX="3.0" layoutY="185.0" minHeight="17.0" minWidth="45.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="45.0" style="-fx-background-color: #1c1c1c;" text="prev" textFill="#1c1c1c">
                            <graphic>
@@ -283,6 +286,9 @@
                                  </cursor>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                         <Button layoutX="43.0" layoutY="188.0" minHeight="16.0" minWidth="0.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="0.0" style="-fx-background-color: #1c1c1c;" text="play" textFill="#1c1c1c">
                            <graphic>
@@ -290,8 +296,14 @@
                                  <image>
                                     <Image url="@nlv%20pic/play.png" />
                                  </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
                               </ImageView>
                            </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Button>
                      </children>
                   </Pane>

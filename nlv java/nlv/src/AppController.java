@@ -3,6 +3,8 @@ import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+
+
 //import java.util.Timer;
 //import java.util.TimerTask;
 //import javafx.application.Application;
@@ -96,6 +98,35 @@ public class AppController implements Initializable{
         }
         else{
             songNumber=0;
+            mediaPlayer.stop();
+
+            media = new Media(songs.get(songNumber).toURI().toString());
+            mediaPlayer= new MediaPlayer(media);
+
+            songLabel.setText(songs.get(songNumber).getName());
+            /*volumeSlider.valueProperty().addListner(new ChangeListener<Number>(){
+                @Override
+                public void changed(ObservableValue<? extends Number> arg0, Number arg1, Number arg2){
+                    mediaPlayer.setVolume(volumeSlider.getValue() * 0.01);
+                }
+                
+            });*/
+        }
+    }
+
+    public void prevmedia(){
+        if(songNumber > 0){
+            songNumber--;
+            mediaPlayer.stop();
+
+            media = new Media(songs.get(songNumber).toURI().toString());
+            mediaPlayer= new MediaPlayer(media);
+
+            songLabel.setText(songs.get(songNumber).getName());
+            playButton();
+        }
+        else{
+            songNumber= songs.size() - 1;
             mediaPlayer.stop();
 
             media = new Media(songs.get(songNumber).toURI().toString());
