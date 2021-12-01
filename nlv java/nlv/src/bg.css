@@ -10,3 +10,16 @@
   color: #f9f2e7;
   font-weight: 1080;
 }
+
+.genre_color1{
+  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #f89b98, #f8d49b);
+}
+.genre_color2{
+  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #75bde0, #f8bc9b);
+}
+.genre_color3{
+  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #b9cc95, #ff9f97);
+}
+.recently_p{
+  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #f2e2e5, #d35a7f);
+}
