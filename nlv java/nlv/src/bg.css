@@ -3,7 +3,11 @@
 }
 
 .scrollbar_color{
-  -fx-background-color:linear-gradient(from 9% 9% to 81% 81%, #f9f2e7,#000000)
+  -fx-background-color:linear-gradient(from 81% 81% to 9% 9%, #1c1c1c,#f9f2e7)
+}
+
+.main {
+  -fx-background-color:linear-gradient(from 9% 9% to 81% 81%, #353a5f,#561139)
 }
 
 .preppy {
