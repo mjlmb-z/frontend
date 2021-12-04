@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Application",
+            "request": "launch",
+            "mainClass": "Application",
+            "projectName": "nlv java_f8713e05"
+        },
+        {
+            "type": "java",
             "name": "Launch controller",
             "request": "launch",
             "mainClass": "controller",
