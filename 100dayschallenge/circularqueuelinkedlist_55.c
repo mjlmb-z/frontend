@@ -58,7 +58,7 @@ void print(){ // Print the elements of Queue
 int main()
 {
 	int opt,n,i,data;
-	printf("Enter Your Choice:-");
+	printf("\nEnter Your Choice:");
 	do{
 		printf("\n\n1 for Insert the Data in Queue\n2 for show the Data in Queue \n3 for Delete the data from the Queue\n0 for Exit\n>>");
 		scanf("%d",&opt);
