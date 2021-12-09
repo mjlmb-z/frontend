@@ -2,6 +2,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch javastring",
+      "request": "launch",
+      "mainClass": "javastring",
+      "projectName": "100dayschallenge_31a547d6"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
