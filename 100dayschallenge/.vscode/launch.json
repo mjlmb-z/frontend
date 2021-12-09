@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch prct2",
+      "request": "launch",
+      "mainClass": "prct2",
+      "projectName": "100dayschallenge_31a547d6"
+    },
+    {
+      "type": "java",
       "name": "Launch javastring",
       "request": "launch",
       "mainClass": "javastring",
