@@ -24,5 +24,7 @@ public class prct2 {
     System.out.println(sb.capacity()); //now 34  
     sb.ensureCapacity(50); //now (34*2)+2  
     System.out.println(sb.capacity()); //now 70  
+
+    
     }  
 }
