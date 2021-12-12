@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch q2",
+      "request": "launch",
+      "mainClass": "q2",
+      "projectName": "100dayschallenge_31a547d6"
+    },
+    {
+      "type": "java",
+      "name": "Launch q1",
+      "request": "launch",
+      "mainClass": "q1",
+      "projectName": "100dayschallenge_31a547d6"
+    },
+    {
+      "type": "java",
       "name": "Launch prct2",
       "request": "launch",
       "mainClass": "prct2",
