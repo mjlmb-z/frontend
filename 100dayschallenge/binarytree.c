@@ -86,7 +86,7 @@ void postorder(node *temp)
    }
 }
  
-void main() 
+int main() 
 {
    int choice;
    int key;
@@ -140,4 +140,5 @@ void main()
          break;
       }
    } while (choice != 4);
+   return 0;
 }

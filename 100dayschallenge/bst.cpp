@@ -7,6 +7,7 @@ struct nod//node declaration
    struct nod *l;
    struct nod *r;
 }*r;
+
 class BST
 {
    public://functions declaration
@@ -235,11 +236,11 @@ void BST::preorder(nod *ptr)
    if (r == NULL)
    {
       cout<<"Tree is empty"<<endl;
-      return;
+      return; 
    }
    if (ptr != NULL)
    {
-      cout<<ptr->info<<" ";
+      cout<<ptr->info<<""; 
       preorder(ptr->l);
       preorder(ptr->r);
    }
@@ -354,6 +355,7 @@ int main()
             exit(1);
          default:
             cout<<"Wrong choice"<<endl;
+            break;
       }
    }
 }
