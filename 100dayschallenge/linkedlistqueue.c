@@ -4,8 +4,10 @@
 struct node{
     int data;
     struct node *next;
-    struct node *front=NULL, *rear=NULL;
+    
 };
+struct node *front=NULL;
+struct node *rear=NULL;
 
 void insert(int x);
 void delete();
@@ -13,7 +15,7 @@ void display();
 
 void insert(int x){
     struct node *newnode;
-    newnode=(struct *node)malloc(sizeof(struct node));
+    newnode=(struct node*)malloc(sizeof(struct node));
     newnode->data=x;
     newnode->next= NULL;
     if(front==NULL){
@@ -23,11 +25,11 @@ void insert(int x){
         rear->next=newnode;
         rear=newnode;
     }
-    printf("\nInsertion was successful");
+    printf("\nInsertion was successful\n");
 };
 void delete(){
     if(front==NULL){
-        printf("\nQueue is empty");
+        printf("\nQueue is empty\n");
     }
     else{
         struct node *temp=front;
@@ -46,7 +48,7 @@ void display(){
             printf("%d--->",temp->data);
             temp=temp->next;
         }
-        printf("%d--->NULL",temp->data);
+        printf("NULL");
     }
 };
 void main()
@@ -66,7 +68,7 @@ void main()
 	 case 2: delete(); break;
 	 case 3: display(); break;
 	 case 4: exit(0);
-	 default: printf("\nWrong selection!!! Please try again!!!\n");
+	 default: printf("\nPlease try again using the proper selection!!!\n");
       }
    }
 }

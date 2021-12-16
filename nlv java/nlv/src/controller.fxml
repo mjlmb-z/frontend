@@ -22,7 +22,7 @@
             <Font name="Perpetua" size="9.0" />
          </font>
          <cursor>
-            <Cursor fx:constant="HAND" />
+            <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
       <Circle accessibleRole="BUTTON" fill="#d1397b" layoutX="575.0" layoutY="23.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="9.0">
