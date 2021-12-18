@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch _3353_Likla",
+      "request": "launch",
+      "mainClass": "_3353_Likla",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Launch exceptionhandling",
+      "request": "launch",
+      "mainClass": "oops.exceptionhandling.exceptionhandling",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Launch exceptionhandling",
+      "request": "launch",
+      "mainClass": "exceptionhandling",
+      "projectName": "100dayschallenge_31a547d6"
+    },
+    {
+      "type": "java",
       "name": "Launch q2",
       "request": "launch",
       "mainClass": "q2",
