@@ -5,6 +5,8 @@ int main(){
     printf("\t%d",a==b);
     printf("\t%d",a!=b);
     printf("\t%d",a=!b);
-    
+    printf("\t%d",a=-b);
     return 0;
 }    
+
+
