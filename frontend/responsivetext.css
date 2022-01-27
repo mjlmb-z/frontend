@@ -1,0 +1,32 @@
+body{
+    background-color: blueviolet;
+}
+
+.c{
+    font-family: Haettenschweiler;
+    font-size: 27px;
+    margin: 25%;
+    width: 27px;
+    height: 27px;
+    position: fixed;
+    top: 50%;
+    left: 0%;
+}
+.hello{
+    text-align: center;
+}
+
+.hello:hover{
+    color: #f1f1f1;
+    transition: 0.9s;
+}
+@media (min-width: 138-vh){
+    .hello{
+        font-size: 90px;
+    }
+}
+@media (min-width: 180vh){
+    .hello{
+        font-size: 270px;
+    }
+}
